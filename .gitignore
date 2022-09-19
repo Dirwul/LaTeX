@@ -1,0 +1,10 @@
+.vscode/
+.DS_Store
+.aux
+.fdb_latexmk
+.fls
+.log
+.pdf
+.senctex.gz
+.xdv
+main.tex
