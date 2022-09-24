@@ -1,4 +1,5 @@
 {
     "files.autoSave": "off",
-    "files.autoSaveDelay": 100000
+    "files.autoSaveDelay": 100000,
+    "latex-workshop.latex.recipe.default": "latexmk (xelatex)"
 }

@@ -1,0 +1,69 @@
+// Place your key bindings in this file to override the defaults
+// wrapping selecting text:
+// ${1:${TM_SELECTED_TEXT}}$0
+[
+    {
+        "key": "cmd+shift+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\textit{${1:${TM_SELECTED_TEXT}}$0}"
+        },
+    },
+    {
+        "key": "cmd+shift+b",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\textbf{${1:${TM_SELECTED_TEXT}}$0}"
+        },
+    },
+    {
+        "key": "cmd+shift+n",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\begin{${1:${TM_SELECTED_TEXT}}$0}\n\t\n\\end{${1:${TM_SELECTED_TEXT}}$0}"
+        },
+    },
+    {
+        "key": "cmd+n",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\"
+        },
+    },
+    {
+        "key": "cmd+shift+j",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\begin{itemize}\n\t\\item $0\n\\end{itemize}"
+        },
+    },
+    {
+        "key": "cmd+shift+k",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\begin{figure}[H]\n\t\\centering\n\t\\includegraphics[width=0.75\\linewidth]{src/$0.png}\n\t\\caption{$1}\\end{figure}"
+        },
+    },
+    {
+        "key": "cmd+shift+l",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\begin{multicols}{2}\n\t$0\n\\columnbreak\n\t\n\\end{multicols}"
+        },
+    },
+    {
+        "key": "cmd+shift+w",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\begin{comment}\n\t${1:${TM_SELECTED_TEXT}}$0\n\\end{comment}"
+        },
+    },
+]
