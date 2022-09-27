@@ -47,7 +47,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\begin{figure}[H]\n\t\\centering\n\t\\includegraphics[width=0.75\\linewidth]{src/$0.png}\n\t\\caption{$1}\\end{figure}"
+            "snippet": "\\begin{figure}[H]\n\t\\centering\n\t\\includegraphics[width=0.75\\linewidth]{src/$2.png}\n\t\\caption{$1}\n\\end{figure}\n$0"
         },
     },
     {
@@ -55,7 +55,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == latex",
         "args": {
-            "snippet": "\\begin{multicols}{2}\n\t$0\n\\columnbreak\n\t\n\\end{multicols}"
+            "snippet": "\\begin{multicols}{2}\n\t\n\t\n\t$0\n\\columnbreak\n\t\n\t\n\t\n\\end{multicols}"
         },
     },
     {
